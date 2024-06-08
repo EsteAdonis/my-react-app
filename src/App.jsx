@@ -2,7 +2,8 @@
 // --
 // (not including external frameworks or preprocessors)
 
-// 1. External    <-- Working with external css
+
+// 2. Modules  <-- Working 
 
 import Button from "./Button/Button"
 
