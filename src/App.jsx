@@ -1,16 +1,16 @@
-// How to style react components with css
-// --
-// (not including external frameworks or preprocessors)
+// props = read-only properties that are shared between components.
+//         A parent component can send data to a child component.
+//         <Component key=value />
 
-
-// 3. Inline styles
-
-import Button from "./Button/Button"
+import Student from './Student/Student.jsx'
 
 function App() {
   return (
     <>
-    <Button/>
+      <Student name="SpongeBob" age={30} isStudent={true} />
+      <Student name="Patrick" age={42} isStudent={false} />
+      <Student name="SquidWard" age={50} isStudent={false} />
+      <Student name="Sandy" age={27} isStudent={true} />           
     </>
   )
 }
