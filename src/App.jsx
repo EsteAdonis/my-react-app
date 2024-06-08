@@ -1,6 +1,6 @@
-// props = read-only properties that are shared between components.
-//         A parent component can send data to a child component.
-//         <Component key=value />
+// propTypes = a mechanism that ensures that the passed value
+//             if of the correct datatype.
+//             age: PropTypes.number
 
 import Student from './Student/Student.jsx'
 
