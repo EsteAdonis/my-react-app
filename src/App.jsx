@@ -1,17 +1,14 @@
-// defaultProps = default values from props in case they are not
-//                passed from the parent component
-//                name: "Guest"
+// conditional rendering = allows you to control what gets rendered
+//                         in your application based on certain conditions
+//                         (show, hide, or change components)
 
-import Student from './Student/Student.jsx'
+import UserGreeting from "./UserGreetings/UserGreeting"
 
 function App() {
   return (
     <>
-      <Student name="SpongeBob" age={30} isStudent={true} />
-      <Student name="Patrick" age={42} isStudent={false} />
-      <Student name="SquidWard" age={50} isStudent={false} />
-      <Student name="Sandy" age={27} isStudent={true} />           
-      <Student  />         
+      <UserGreeting isLoggedIn={true} username="Adonis" />
+      <UserGreeting />      
     </>
   )
 }
