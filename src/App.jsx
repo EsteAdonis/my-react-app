@@ -3,7 +3,7 @@
 // (not including external frameworks or preprocessors)
 
 
-// 2. Modules  <-- Working 
+// 3. Inline styles
 
 import Button from "./Button/Button"
 
