@@ -1,11 +1,12 @@
-import UpdateStateWithArray from "./Update-State-With-Array/UpdateStateWithArray"
+import ToDoList from "./ToDoList/ToDoList"
+
 
 
 function App() {
   
   return (
     <>
-      <UpdateStateWithArray />
+      <ToDoList />
     </>
   )
 }
