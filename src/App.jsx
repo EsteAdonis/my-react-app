@@ -1,10 +1,11 @@
-import ColorPiker from "./ColorPicker/ColorPicker"
+
+import UpdateState from "./Update-State/UpdateState"
 
 function App() {
   
   return (
     <>
-      <ColorPiker />
+      <UpdateState />
     </>
   )
 }
