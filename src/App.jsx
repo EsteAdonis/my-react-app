@@ -1,12 +1,10 @@
-import ToDoList from "./ToDoList/ToDoList"
-
-
+import UseEffect from "./UseEffect/UseEffect"
 
 function App() {
   
   return (
     <>
-      <ToDoList />
+      <UseEffect />
     </>
   )
 }
