@@ -1,11 +1,11 @@
+import UpdateStateWithArray from "./Update-State-With-Array/UpdateStateWithArray"
 
-import UpdateState from "./Update-State/UpdateState"
 
 function App() {
   
   return (
     <>
-      <UpdateState />
+      <UpdateStateWithArray />
     </>
   )
 }
