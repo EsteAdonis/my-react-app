@@ -1,10 +1,10 @@
-import UseEffect from "./UseEffect/UseEffect"
+import DigitalClock from "./DigitalClock/DigitalClock"
 
 function App() {
   
   return (
     <>
-      <UseEffect />
+     <DigitalClock />
     </>
   )
 }
