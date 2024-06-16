@@ -1,10 +1,10 @@
-import DigitalClock from "./DigitalClock/DigitalClock"
-
+import ComponentA from "./UseContext/ComponentA"
+  
 function App() {
   
   return (
     <>
-     <DigitalClock />
+      <ComponentA />
     </>
   )
 }

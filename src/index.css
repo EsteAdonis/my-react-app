@@ -204,3 +204,8 @@ body {
 
 }
 
+.box {
+  border: 6px solid;
+  padding: 25px;
+}
+
