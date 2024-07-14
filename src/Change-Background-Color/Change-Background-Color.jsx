@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 
 function ChangeBackgroundColor() {
+
   const styles = {
     backgroundColor: "hsl(200, 100%, 50%)",
     color: "white",
@@ -9,7 +10,7 @@ function ChangeBackgroundColor() {
     borderRadius: "5px",
     border: "none",
     cursor: "pointer",
-}  
+  }  
 
   const [color, setColor] = useState("blue");
 
@@ -17,15 +18,18 @@ function ChangeBackgroundColor() {
     setColor(color);
   }
 
+  useEffect(() => {
+    document.body.style.backgroundColor = color;
+  }, [color]);
+
   return (
     <>
       <div className="app">
-        <button type="button" onClick = {() => click("yellow")}  style={styles}>Change Color</button>
+        <button type="button" onClick = {() => {click("yellow")}}  style={styles}>Change Color</button>
       </div>
       <div>How to change background color</div>
     </>      
   )
-
 }
 
 export default ChangeBackgroundColor;
