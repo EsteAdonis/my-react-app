@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+}
+
+.background-Readonly {
+  background-color: rgb(234, 234, 234);
+}
+
+.error-border {
+  border: 1px solid red;
+  border-radius: 5px;;
+}
