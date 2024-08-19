@@ -14,4 +14,4 @@ jobs:
         run:  echo "Hi Adonis"
 
       - name: Runs ls -l
-        run: ls -l
+        run: dir
