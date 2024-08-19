@@ -1,3 +1,5 @@
+[![Deploying My React App](https://github.com/EsteAdonis/my-react-app/actions/workflows/my-react-app.yml/badge.svg)](https://github.com/EsteAdonis/my-react-app/actions/workflows/my-react-app.yml)
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
