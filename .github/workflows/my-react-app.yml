@@ -1,5 +1,6 @@
 name: my react app
 run-name: ${{github.actor}} is testing out GitHub Actions
+
 on:
   push: 
     branches:
@@ -11,6 +12,9 @@ jobs:
     steps:
       - name: echo the message
         run:  echo "Hi Adonis"
+
+      - name: running  the app
+        run: npm run dev
         
       - name: npm install
         run: npm i
