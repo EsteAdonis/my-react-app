@@ -18,8 +18,8 @@ jobs:
         with:
           node-version: '18.18.0'
       
-      # - name: Installing Dependencies
-      #   run: npm i
+      - name: Installing Dependencies
+        run: npm i
 
       # - name: Lint
       #   run: npm run lint
