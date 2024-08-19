@@ -7,7 +7,7 @@ on:
 
 jobs:
   adonis:
-    runs-on: unbutu
+    runs-on: ubutu
     steps:
       - name: echo the message
         run: |
