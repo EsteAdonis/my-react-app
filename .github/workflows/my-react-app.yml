@@ -1,13 +1,13 @@
 name: my react app
-
+run-name: ${{github.actor}} is testing out GitHub Actions
 on:
   push: 
     branches:
       - main
 
 jobs:
-  adonis:
-    runs-on: ubuntu
+  Explore-GitHub-Acctions:
+    runs-on: ubuntu-latest
     steps:
       - name: echo the message
         run: |
