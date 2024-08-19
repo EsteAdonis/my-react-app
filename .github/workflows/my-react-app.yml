@@ -13,8 +13,5 @@ jobs:
       - name: echo the message
         run:  echo "Hi Adonis"
 
-      - name: running  the app
-        run: npm run dev
-        
-      - name: npm install
-        run: npm i
+      - name: Runs ls -l
+        run: ls -l
