@@ -1,1 +1,14 @@
+name: my react app
 
+on:
+  push: 
+    branches:
+      - main
+
+jobs:
+  adonis:
+    runs-on: unbutu
+    steps:
+      - name: echo the message
+        run: |
+          echo "Hi Adonis"
