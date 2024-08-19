@@ -22,4 +22,4 @@ jobs:
         run: npm i
 
       - name: Lint
-        run: npm run lin
+        run: npm run lint
