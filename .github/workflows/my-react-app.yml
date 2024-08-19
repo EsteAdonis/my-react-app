@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: echo the message
-        run: |
-          echo "Hi Adonis"
+        run:  echo "Hi Adonis"
+        
       - name: npm install
         run: npm i
