@@ -19,7 +19,7 @@ jobs:
           node-version: '18.18.0'
       
       - name: Installing Dependencies
-        run: npm i
+        run: npm i --no-audit --no-fund --no-optional
 
       - name: Lint
         run: npm run lint
