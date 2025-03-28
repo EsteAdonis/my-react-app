@@ -1,0 +1,12 @@
+{
+  "editor.tabSize": 2,
+  "window.zoomLevel": 3.2,
+  "editor.fontSize": 16,
+  "editor.fontFamily": "Consolas, 'Courier New', monospace",
+  "editor.mouseWheelZoom": true,
+  "editor.mouseWheelScrollSensitivity": 1.5,
+  "editor.minimap.enabled": false,
+  "terminal.integrated.mouseWheelZoom": true,
+  "terminal.integrated.mouseWheelScrollSensitivity": 6,
+  "terminal.integrated.fontSize": 15
+}
