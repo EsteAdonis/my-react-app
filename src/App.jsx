@@ -7,7 +7,7 @@ import { CardWrapper } from './components/CardWrapper.jsx';
 import { Contact } from './components/Contact.jsx';
 import { Newsletter } from './components/Newsletter.jsx';
 import { Menu } from './components/PassingData/Menu.jsx';
-import Counter from './Zustand/Counter.jsx';
+import { Counter } from './Zustand/Counter.jsx';
 
 
 function App() {

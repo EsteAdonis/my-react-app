@@ -1,4 +1,5 @@
-import create from 'zustand';
+// import create from 'zustand';
+import { create } from 'zustand'
 
 // ...existing code...
 // create a local Zustand store (if you already have a shared store, import it instead)

@@ -5,7 +5,8 @@
 //                    Good practice to use updater functions.
 
 
-import { useCounterStore } from './storeCounterZustand';
+// import { useCounterStore } from './storeCounterZustand';
+import { useCounterStore } from './UseCounterStore';
 
 export const Counter = () => {
   const count = useCounterStore((s) => s.count);
