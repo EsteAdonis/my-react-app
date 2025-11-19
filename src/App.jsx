@@ -3,6 +3,9 @@
 // import Input from './Input/Input.jsx';
 // import Stopwatch from './Stopwatch/Stopwatch.jsx';
 // import Textarea from './Textarea/Textarea.tsx';
+import { Contact } from './components/Contact.jsx';
+import { Newsletter } from './components/Newsletter.jsx';
+import { Menu } from './components/PassingData/Menu.jsx';
 import Counter from './Zustand/Counter.jsx';
 
 
@@ -14,6 +17,11 @@ function App() {
   return (
     <>
       <Counter />
+			<Contact />
+			<Newsletter />
+			<Menu />
+
+
 
       {/* <Stopwatch /> */}
       {/* <Textarea
