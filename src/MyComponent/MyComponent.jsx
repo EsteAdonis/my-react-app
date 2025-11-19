@@ -48,7 +48,7 @@ function MyComponent() {
         <option value="">Select an option</option>
         <option value="Visa">Visa</option>
         <option value="MasterCard">MasterCard</option>
-        <option value="GirtCard">GirtCard</option>        
+        <option value="GirtCard">GirtCard</option>
       </select>
       <p>Payment: {payment}</p>
 

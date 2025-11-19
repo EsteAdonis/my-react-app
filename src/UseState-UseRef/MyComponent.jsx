@@ -4,7 +4,6 @@ function MyComponent() {
 
   const inputRef1 = useRef(null);
  
-
   useEffect(() => {
     console.log('Component Render');
     console.log(inputRef1);
@@ -17,9 +16,7 @@ function MyComponent() {
 
   return (
     <div>
-      <button onClick={handleClick}>
-        Click me!
-      </button>
+      <button onClick={handleClick}>Click me!</button>
       <input ref={inputRef1}/>
     </div>      
   )

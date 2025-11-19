@@ -9,7 +9,7 @@ function UpdateState() {
 
   function handleMakeChange(event) {
     setCar(c=> ({...c, make: event.target.value}));
-  }  
+  }
 
   function handleModelChange(event) {
     setCar(c => ({...c, model: event.target.value}));
@@ -22,11 +22,6 @@ function UpdateState() {
       <input type="number" value={car.year} onChange={handleYearChange} /> <br />
       <input type="text" value={car.make} onChange={handleMakeChange} /> <br />      
       <input type="text" value={car.model} onChange={handleModelChange} /> <br />            
-      
     </div>      
-  
-  
   )
 }
-
-export default UpdateState

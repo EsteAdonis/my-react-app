@@ -33,3 +33,12 @@ Currently, two official plugins are available:
 18.  useContext() hook 🧗‍♂️
 19.  useRef() hook 🗳️
 20.  stopwatch app ⏱
+
+- Implementing React Testing
+- https://www.youtube.com/watch?v=T2sv8jXoP4s&list=PLC3y8-rFHvwirqe1KHFCHJ0RqNuN61SJd&index=2
+- https://www.youtube.com/watch?v=NEEtzkLn2Gc&list=PLC3y8-rFHvwirqe1KHFCHJ0RqNuN61SJd&index=7
+
+- npm install --save-dev @testing-library/react @testing-library/dom
+
+- For TypeScript projects, include the type definitions:
+- npm install --save-dev @types/react @types/react-dom
