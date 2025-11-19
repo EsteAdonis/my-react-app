@@ -3,6 +3,7 @@
 // import Input from './Input/Input.jsx';
 // import Stopwatch from './Stopwatch/Stopwatch.jsx';
 // import Textarea from './Textarea/Textarea.tsx';
+import { CardWrapper } from './components/CardWrapper.jsx';
 import { Contact } from './components/Contact.jsx';
 import { Newsletter } from './components/Newsletter.jsx';
 import { Menu } from './components/PassingData/Menu.jsx';
@@ -20,6 +21,11 @@ function App() {
 			<Contact />
 			<Newsletter />
 			<Menu />
+			<CardWrapper title="User Profile">
+				<p>Amy Adams</p>
+				<p>Vanessa Kirby</p>
+				<button>Add more actress</button>
+			</CardWrapper>
 
 
 
