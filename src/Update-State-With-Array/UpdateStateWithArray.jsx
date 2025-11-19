@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 function UpdateStateWithArray() {
   const [foods, setFoods] = useState(["Apple", "Orange", "Banana"]);

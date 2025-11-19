@@ -14,6 +14,7 @@ Stack.propTypes = {
   spacing: PropTypes.number,
   wrap: PropTypes.bool,
   direction: PropTypes.oneOf(["row", "column"]),
+	children: PropTypes.node.isRequired,
 }
 
 export default Stack

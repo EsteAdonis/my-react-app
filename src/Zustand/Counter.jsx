@@ -4,47 +4,19 @@
 //                    Used with multiple state updates and asynchronous functions
 //                    Good practice to use updater functions.
 
-import {useCounterStore} from "../zustand/store.jsx";
-import { useEffect } from "react";
 
-const logCount = () => {
-  console.log("Count: ", useCounterStore.getState().count);
-}
+import { useCounterStore } from './storeCounterZustand';
 
-function Counter() {
-  const { count, increase, decrease, reset, incrementAsync } = useCounterStore();
-
-  useEffect(() => {
-    logCount();
-  },[count]) ;
-
-
-  const increment = () => {
-    increase();
-    increase();
-    increase();
-    incrementAsync();
-  }
-
-  const decrement = () => {
-    decrease(c => c - 3); 
-    decrease(c => c - 3);
-    decrease(c => c - 3);    
-  }
-
-  const resetCounter = () => {
-    reset();
-  }
+export const Counter = () => {
+  const count = useCounterStore((s) => s.count);
+  const increment = useCounterStore((s) => s.increment);
+  const decrement = useCounterStore((s) => s.decrement);
 
   return (
-    <div className="counter-container">
-      <h2>Using Zustand</h2>
-      <p className="count-display">{count}</p>
-      <button className="counter-button" onClick={decrement}>Decrement</button>
-      <button className="counter-button" onClick={resetCounter}>Reset</button>      
-      <button className="counter-button" onClick={increment}>Increment</button>      
+    <div>
+      <button onClick={decrement} aria-label="decrement">-</button>
+      <span style={{ margin: '0 8px' }}>{count}</span>
+      <button onClick={increment} aria-label="increment">+</button>
     </div>
-  )
-}
-
-export default Counter
+  );
+};

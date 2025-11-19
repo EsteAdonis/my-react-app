@@ -15,14 +15,15 @@
 // 2. const value = useContext(MyContext);
 
 
-import React, { useState, createContext } from 'react';
+import { createContext } from 'react';
 import ComponentB from "./ComponentB"
 
 export const UserContext = createContext();
 
 function ComponentA() {
 
-  const [user, setUser] = useState("Adonis Julio Esteban");
+  // const [user, setUser] = useState("Adonis Julio Esteban");
+	const user = "Adonis Julio Esteban";
 
   return (
     <div className="box">

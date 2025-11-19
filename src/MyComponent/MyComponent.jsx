@@ -3,7 +3,7 @@
 //            Trigger a function every time the value of the input changes
 
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 function MyComponent() {
   const [name, setName] = useState("Guest");

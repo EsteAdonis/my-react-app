@@ -1,43 +1,57 @@
-import { useState, useEffect } from 'react';
+// ...existing code...
+import { useEffect, useState } from 'react';
+import PropTypes from 'prop-types';
+
 const BASE_URL = 'https://jsonplaceholder.typicode.com/';
 
-// const Post;
-
-function FetchingData() {
+export const FetchingData = ({ url = 'posts' }) => {
   const [posts, setPosts] = useState([]);
-  const [error, setError] = useState();
+  const [error, setError] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    if (isLoading) return <div>Loading ... </div>;
-    const fetchPosts = async () => {
-      // const response = await fetch(`${BASE_URL}/posts`);
-      // const posts = await response.reson();
-      setIsLoading(true);
-      fetch(`${BASE_URL}/posts`)
-      .then(response => response.json())
-      .then(posts => setPosts(posts))
-      .catch(error => setError(error))
+    const controller = new AbortController();
+    const signal = controller.signal;
 
-      console.log('Post: ', posts);
-      setIsLoading(false);
+    const fetchPosts = async () => {
+      setIsLoading(true);
+      setError(null);
+
+      try {
+        const fullUrl = url.startsWith('http') ? url : `${BASE_URL}${url.replace(/^\/+/, '')}`;
+        const res = await fetch(fullUrl, { signal });
+        if (!res.ok) throw new Error(`Request failed: ${res.status} ${res.statusText}`);
+        const data = await res.json();
+        setPosts(data);
+      } catch (err) {
+        if (err.name !== 'AbortError') setError(err.message ?? 'Unknown error');
+      } finally {
+        setIsLoading(false);
+      }
     };
 
     fetchPosts();
-  }, []);
 
+    return () => controller.abort();
+  }, [url]);
 
   return (
     <div className="tutorial">
-      <h1 className="mb-4 text-2xl">Data Fetching in React</h1>
-      <div>Loading ... </div>
+      {isLoading && <h3 className="mb-4 text-2xl">Loading…</h3>}
+      {error && <p style={{ color: 'red' }}>Error: {error}</p>}
+      {!isLoading && !error && (
         <ul>
-          { posts.map (post => {
-            return <li key={post.id}>{post.title}</li>
-          })}
+          {Array.isArray(posts)
+            ? posts.map((p, i) => <li key={p.id ?? i}>{p.title ?? JSON.stringify(p)}</li>)
+            : <li>No posts</li>}
         </ul>
+      )}
     </div>
-  )
-}
+  );
+};
 
-export default FetchingData
+FetchingData.propTypes = {
+  url: PropTypes.string,
+};
+
+export default FetchingData;

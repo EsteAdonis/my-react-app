@@ -1,14 +1,13 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 
 export const CardWrapper = ({ title, children }) => {
-	return (
-		<div>
-			<h2>{title}</h2>
-			<div classNam="card-Name">{children}</div>
-		</div>
-	);
-}
+    return (
+        <div>
+            <h2>{title}</h2>
+            <div className="card-Name">{children}</div>
+        </div>
+    );
+};
 
 CardWrapper.propTypes = {
     title: PropTypes.node,

@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { useState, useTransition } from 'react';
 
 function SearchComponent({ items }) {
@@ -27,3 +28,7 @@ function SearchComponent({ items }) {
 }
 
 export default SearchComponent;
+
+SearchComponent.propTypes = {
+	items: PropTypes.arrayOf(PropTypes.string).isRequired,
+}

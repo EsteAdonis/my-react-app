@@ -1,4 +1,4 @@
-import React, { Suspense, lazy } from 'react';
+import { Suspense, lazy } from 'react';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Home from './Home';
 
@@ -26,6 +26,6 @@ function App() {
 
 export default App;
 
-export default function About() {
-  return <h2>This is the About page, loaded lazily!</h2>;
-}
+// export default function About() {
+//   return <h2>This is the About page, loaded lazily!</h2>;
+// }

@@ -4,7 +4,7 @@
 //                    Used with multiple state updates and asynchronous functions
 //                    Good practice to use updater functions.
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 function Counter() {
   const [count, setCount] = useState(0);

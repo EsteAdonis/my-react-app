@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 export const MenuItem = ({ name, price, onOrder }) => {
 	return (
 		<>
@@ -9,3 +11,13 @@ export const MenuItem = ({ name, price, onOrder }) => {
 		</>		
 	);
 }
+
+MenuItem.propTypes = {
+	name: PropTypes.string.isRequired,
+	price: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+	onOrder: PropTypes.func.isRequired,
+};
+
+MenuItem.defaultProps = {
+	price: '0.00',
+};
