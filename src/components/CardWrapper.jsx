@@ -6,3 +6,13 @@ export const CardWrapper = ({ title, children }) => {
 		</div>
 	);
 }
+
+CardWrapper.propTypes = {
+    title: PropTypes.node,
+    children: PropTypes.node,
+};
+
+CardWrapper.defaultProps = {
+    title: '',
+    children: null,
+};
